@@ -25,9 +25,9 @@ DEFAULT_AUTO_FIELD='django.db.models.AutoField'
 SECRET_KEY = 'u5=w9^xn7hl^-73&u^)249ormehb1&b9+3k^80$xy$^a*st!ty'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['resaleSE.herokuapp.com']
+ALLOWED_HOSTS = ['resaleSE.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -124,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'resale/static')
 ]
 
 MEDIA_URL = '/media/'
